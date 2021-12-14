@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    
+  <head>
+    
+     <title>Formulario</title>
+     <link rel="stylesheet" href="formulario.css">
+  </head>
+
+  
+ 
+    <body >
+        
+        <style>
+            h2{
+                color: white
+            }
+            a{
+                font-size: 20px; background-color: black;
+            }
+        </style>
+        <h1>Informacion sobre el producto</h1>
+        <meta charset="UTF-8"> 
+        
+
+        <fieldset id="tipo1">
+            <legend><ins><h2 style="background-color:black;" >Datos basicos</h2></ins></legend>
+        
+      <!-- Nombre-->    
+
+      </br>Nombre </br>
+      <input type="text"  name="nombre" value="" />
+
+      <!-- Descripcion-->
+    </br>Descripcion </br>
+    <textarea name="message" rows="10" cols="30"></textarea>
+    <br><br>
+
+    <!-- Foto-->
+   </br>Foto</br>
+   <label for="myfile">Seleccionar archivo :</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+
+   <input name="Añadir contador de vistas" type="checkbox" value="Añadir contador de vistas"/> Añadir contador de vistas 
+
+        </fieldset>
+
+
+   <fieldset id="tipo1">
+    <legend><ins><h2 style="background-color:black;" >Datos economicos</h2></ins></legend>
+
+
+     <!-- Precio-->    
+
+    Precio 
+    <input name="Precio" type="number" value="0"/> €
+    
+    
+     <!-- Impuestos-->    
+
+    
+   
+        <label>Impuestos:</label>
+        <select id="Impuestos" name="Impuestos">
+          <option value="4%">4%</option>
+          <option value="10%">10%</option>
+          <option value="21%">21%</option>
+        
+        </select> </br>
+        
+        <!-- Promocion--> 
+       </br> Promocion</br>
+        <input name="Promocion"  value="Ninguno" type="radio"/> Ninguno </br>
+        <input name="Promocion" type="radio" value="Transporte gratuito"/> Transporte gratuito </br>
+        <input name="Promocion" type="radio" value="Descuento 5%"/> Descuento 5% </br>
+    
+   </fieldset>
+    
+     <h2 style="background-color: black;"><input type="submit" value="" />Enviar</h2>
+     <h2 style="background-color: black;"><input type="submit" value="" />Borrar</h2>
+    
+    
+
+       
+    
+    </body>
+</html>
